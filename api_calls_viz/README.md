@@ -10,8 +10,7 @@ image where each pixel represents library call from a trace.
 
 **Example:**
 
-While the script was mainly developed to visualize an output of *drltrace* tool, the script is possible to use 
-for custom traces provided in the appropriate format.
+While the script was mainly developed to visualize an output of [drltrace](https://github.com/DynamoRIO/drmemory/tree/master/drltrace) tool, the script is possible to use for custom traces provided in the appropriate format.
 
 # Usage
 ```api_calls_vis.py -i [jpeg image name] -ht [html image name] -gr -t [trace_name]```
