@@ -168,7 +168,7 @@ def gen_image(trace_name, image_name, html_page_name, grayscale):
         print 'Failed to open the file %s, error msg: %s' % (trace_name, str(e))
     #TODO: what if I randomly selected red 0x255 0x0 0x0?
     for line in content:
-        if "    arg" in line: # skip arguments provided by drltrace
+        if "    arg" in line or "module id" in line: # skip arguments provided by drltrace
             continue
         #extract API call name
         line = line[:line.find("(")]
